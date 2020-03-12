@@ -1,0 +1,68 @@
+@import "src/assets/scss/variables";
+
+.popup-menu {
+  background-color: $color-white;
+  box-shadow: $shadow-blue-20;
+  position: relative;
+  z-index: auto;
+  border-radius: 10px;
+  .top-arrow {
+    position: absolute;
+    z-index: auto;
+    top: -30px;
+    left: 15px;
+    border: 20px solid transparent;
+    border-bottom: 10px solid $color-white;
+    width: 40px;
+  }
+  .right {
+    left: calc(100% - (40px + 15px))
+  }
+  .clip {
+    border-radius: 10px;
+    overflow: hidden;
+    padding-top: 25px;
+    padding-bottom: 10px;
+  }
+  .options-container {
+    max-height: 210px;
+    overflow: auto;
+    color: $color-blue-primary;
+    font-weight: 600;
+    .option {
+      box-sizing: border-box;
+      padding: 5px 20px;
+      font-weight: 600;
+      cursor: pointer;
+      &__reset {
+        color: #7a7d81;
+      }
+      &:hover {
+        background-color: $color-background;
+      }
+    }
+  }
+  .styling {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 90px;
+    height: 40px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    user-select: none;
+    cursor: pointer;
+  }
+  .blue {
+    background-color: $color-white;
+    border: 1px solid $color-blue-primary;
+    color: $color-blue-primary;
+  }
+  .blue-fill {}
+  .red {}
+  .red-fill {
+    background-color: $color-error;
+    color: $color-white;
+  }
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="6px" height="6px" viewBox="0 0 6 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>Triangle Copy</title>
+    <desc>Created with Sketch.</desc>
+    <g id="PatientsList" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="NextMotion_Patients_Tag" transform="translate(-376.000000, -266.000000)" fill="#B2D4F0">
+            <g id="Group-39" transform="translate(90.000000, 174.000000)">
+                <g id="Group-33" transform="translate(0.000000, 70.000000)">
+                    <g id="Group-15">
+                        <polygon id="Triangle-Copy" transform="translate(289.000000, 25.000000) scale(1, -1) translate(-289.000000, -25.000000) " points="289 22 292 28 286 28"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

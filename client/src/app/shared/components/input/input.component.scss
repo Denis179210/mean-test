@@ -1,0 +1,21 @@
+.input {
+  width: 100%;
+  cursor: pointer;
+  &_label {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  &_field {
+    width: inherit;
+    height: 40px;
+    border-radius: 25px;
+    border: 1px solid #ECF1FF;
+    box-sizing: border-box;
+    padding: 0px 15px;
+    font-size: 16px;
+    color: #7a7d81;
+  }
+}

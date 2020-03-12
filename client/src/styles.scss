@@ -1,0 +1,27 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body {
+  height: 100%;
+  background-color: #ECF1FF;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, "Helvetica Neue", "Open Sans", sans-serif;
+  font-size: 16px;
+  input, input:focus  {
+    outline: none;
+  }
+
+}
+
+.popup-panel .mat-dialog-container {
+  padding: 0;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 0 rgba(0, 113, 206, .2);
+  background-color: transparent;
+}
+
+.popup-backdrop {
+  background-color: transparent;
+}
+

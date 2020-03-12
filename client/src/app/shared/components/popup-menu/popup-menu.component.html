@@ -1,0 +1,10 @@
+<div class="popup-menu">
+  <div class="clip">
+    <div class="options-container">
+      <div class="option option__reset" (click)="reset()">...select</div>
+      <div class="option" *ngFor="let option of options" (click)="select(option)">
+        <span>{{option}}</span>
+      </div>
+    </div>
+  </div>
+</div>

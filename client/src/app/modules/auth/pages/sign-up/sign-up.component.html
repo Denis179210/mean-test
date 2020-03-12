@@ -1,0 +1,28 @@
+<div class="signup">
+  <div class="heading"><span>Sign up</span></div>
+  <form class="form" [formGroup]="FormGroup">
+    <div>
+      <div class="form_input">
+        <app-text-input [parentControl]="FormGroup.get('firstName')" [title]="'First Name'"></app-text-input>
+      </div>
+      <div class="form_input">
+        <app-text-input [parentControl]="FormGroup.get('lastName')" [title]="'Last Name'"></app-text-input>
+      </div>
+      <div class="form_input">
+        <app-text-input [parentControl]="FormGroup.get('email')" [title]="'Email'"></app-text-input>
+      </div>
+      <div class="form_input">
+        <app-text-input [parentControl]="FormGroup.get('password')" [title]="'Password'"></app-text-input>
+      </div>
+    </div>
+    <div class="form_footer">
+      <div class="no-account"><span>Already have an account?</span></div>
+      <div class="signup-link" (click)="signin()">
+        <span>Sign in</span>
+      </div>
+    </div>
+  </form>
+  <div class="submit-button"  [ngClass]="{'submit-button__disabled': !FormGroup.valid}" (click)="submit()">
+    <span>Submit</span>
+  </div>
+</div>

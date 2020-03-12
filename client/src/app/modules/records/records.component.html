@@ -1,0 +1,74 @@
+<div class="records">
+
+  <div class="top-panel">
+    <form class="search-form" [formGroup]="searchForm">
+      <div class="role-filter">
+        <app-select-input [title]="'Role'"
+                          [options]="predefinedRoles.options"
+                          (inputValueChangesEvent)="setRole($event)"
+        ></app-select-input>
+      </div>
+      <div class="search">
+        <app-text-input [title]="'Search'" [parentControl]="searchForm.get('search')"></app-text-input>
+      </div>
+    </form>
+    <div class="new-record" (click)="createRecord()">
+      <span>+ add</span>
+    </div>
+  </div>
+
+  <ng-template #noData>
+    <div class="dummy">
+      <span>No data.</span>
+    </div>
+  </ng-template>
+
+  <table class="table" mat-table matSort [dataSource]="dataSource" *ngIf="dataSource?.data.length; else noData">
+
+    <ng-container *ngFor="let column of columnsToDisplay" [matColumnDef]="column">
+      <th mat-header-cell *matHeaderCellDef>
+        <div class="header-cell">
+          <span>{{column}}</span>
+        </div>
+      </th>
+
+      <td mat-cell *matCellDef="let record">
+        <div class="row-cell ds-text-blue-primary ds-text-bolt ds-text-medium">
+          <div>
+            <span class="ds-pl-15">{{record[column]}}</span>
+          </div>
+        </div>
+      </td>
+    </ng-container>
+
+    <ng-container [matColumnDef]="'dummy'">
+      <th mat-header-cell *matHeaderCellDef>
+        <div class="header-cell header-cell__blank-dummy">
+          <!-- It is needed for a correct headers alignment  -->
+        </div>
+      </th>
+      <td mat-cell *matCellDef="let record">
+        <div class="data-actions ds-border-box ds-px-20">
+          <div class="action" (click)="editRecord(record)">
+            <img [src]="'./assets/icons/edit-blue.svg'" alt="edit-blue.svg">
+          </div>
+          <div class="action" (click)="removeRecord($event, record)">
+            <img [src]="'./assets/icons/trash-red.svg'" alt="trash-red.svg">
+          </div>
+        </div>
+      </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="columnsToDisplay.concat('dummy')"></tr>
+    <tr class="row" mat-row *matRowDef="let rowData; columns: columnsToDisplay.concat('dummy')"></tr>
+
+  </table>
+
+  <div>
+    <p>Stats</p>
+    <div *ngFor="let item of stats">
+      <span>Total {{item[0]}}s: {{item[1]}}</span>
+    </div>
+  </div>
+
+</div>

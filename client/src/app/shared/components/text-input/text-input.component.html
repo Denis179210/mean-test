@@ -1,0 +1,20 @@
+<div class="text-input">
+  <div class="title">{{title}}</div>
+  <div class="input-container">
+    <input type="text"
+           class="input"
+           [formControl]="parentControl"
+           (focus)="parentControl.markAsUntouched()"
+     >
+    <div class="error" *ngIf="invalidInput">
+      <div class="error_icon">
+        <img width="20" [src]="'./assets/icons/error.svg'" alt="error.svg">
+      </div>
+      <div class="error_tooltip">
+        <p *ngFor="let error of (error$ | async); let i = index">
+          <span>{{i + 1}}. {{error}}</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

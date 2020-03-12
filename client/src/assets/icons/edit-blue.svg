@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="17px" height="17px" viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>icon_edit</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Tests" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="NextMotion_Settings_MyAccount" transform="translate(-425.000000, -238.000000)" stroke="#0071CE">
+            <g id="Group-4" transform="translate(423.000000, 237.000000)">
+                <g id="icon_edit">
+                    <g id="icon_patients" transform="translate(3.000000, 0.000000)">
+                        <path d="M14,8 L14,14 C14,15.6568542 12.6568542,17 11,17 L3,17 C1.34314575,17 2.02906125e-16,15.6568542 0,14 L0,6 C-6.46995335e-16,4.34314575 1.34314575,3 3,3 L9.03242158,3 L9.03242158,3" id="Path-3"></path>
+                        <g id="Group" transform="translate(9.000000, 8.000000) rotate(-315.000000) translate(-9.000000, -8.000000) translate(7.000000, 0.000000)">
+                            <rect id="Rectangle" x="0.5" y="3.5" width="3" height="9"></rect>
+                            <rect id="Rectangle" fill="#0071CE" x="0.5" y="0.5" width="3" height="1"></rect>
+                            <path d="M3.06574145,13.5 L0.934258546,13.5 L2,15.0986122 L3.06574145,13.5 Z" id="Rectangle-Copy" fill="#0071CE"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

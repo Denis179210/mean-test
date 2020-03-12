@@ -1,0 +1,26 @@
+<div class="record-form" [formGroup]="FormGroup">
+  <div class="record-form_header">{{formState.title}}</div>
+  <div>
+    <div class="record-form_input">
+      <app-text-input [parentControl]="FormGroup.get('firstName')" [title]="'First Name'"></app-text-input>
+    </div>
+    <div class="record-form_input">
+      <app-text-input [parentControl]="FormGroup.get('lastName')" [title]="'Last Name'"></app-text-input>
+    </div>
+    <div class="record-form_input">
+      <app-text-input [parentControl]="FormGroup.get('email')" [title]="'Email'"></app-text-input>
+    </div>
+    <div class="record-form_input">
+      <app-select-input [title]="'Role'"
+                        [placeholder]="'Select'"
+                        [options]="predefinedRoles.options"
+                        [selectedOption]="formState.selectedRole"
+                        (inputValueChangesEvent)="setRole($event)"
+      ></app-select-input>
+    </div>
+  </div>
+  <div class="buttons">
+    <div class="button button__cancel" (click)="cancel()">Cancel</div>
+    <div class="button button__submit" [ngClass]="{'button__disabled': isDisabled}" (click)="createRecord()">Submit</div>
+  </div>
+</div>

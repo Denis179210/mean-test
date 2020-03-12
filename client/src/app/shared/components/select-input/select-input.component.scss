@@ -1,0 +1,47 @@
+@import "src/assets/scss/variables";
+
+.select-input {
+  position: relative;
+  z-index: 10;
+  cursor: pointer;
+  * {
+    user-select: none;
+  }
+  .title {
+    font-size: 14px;
+    font-weight: 600;
+    color: $color-text-grey;
+  }
+  .input {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid $color-blue-primary;
+    color: $color-blue-primary;
+    font-weight: 600;
+    background-color: inherit;
+    border-radius: 5px;
+    padding: 5px 5px 5px 20px;
+    margin: 5px 0px;
+    box-sizing: border-box;
+    height: 50px;
+    width: 100%;
+    font-size: 14px;
+    .placeholder {
+      font-style: italic;
+      color: $color-light-blue;
+    }
+    .selected-option {
+
+    }
+    &__selected {
+      background-color: $color-blue-primary;
+      color: $color-white;
+    }
+  }
+  &_icon {
+    position: absolute;
+    z-index: 100;
+    right: 15px;
+  }
+}

@@ -1,0 +1,40 @@
+
+.record-form {
+  width: 425px;
+  height: 500px;
+  &_header {
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    margin: 10px auto;
+  }
+  &_input {
+    margin-top: 10px;
+  }
+  .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100px;
+      height: 35px;
+      border-radius: 10px;
+      color: #FFFFFF;
+      font-weight: 600;
+      margin-top: 50px;
+      cursor: pointer;
+      &__submit {
+        background-color: #13B16F;
+      }
+      &__cancel {
+        background-color: #FF6E6E;
+      }
+      &__disabled {
+        opacity: .5;
+      }
+    }
+  }
+}

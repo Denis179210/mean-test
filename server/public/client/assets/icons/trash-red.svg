@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>icon_supprimer</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Tests" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="NextMotion_Settings_MyAccount" transform="translate(-426.000000, -264.000000)" stroke="#FF6E6E">
+            <g id="Group-9" transform="translate(423.000000, 262.000000)">
+                <g id="icon_supprimer">
+                    <g transform="translate(3.000000, 2.000000)" id="Group-65">
+                        <g>
+                            <path d="M1.15134128,4.5 L1.86455883,13.2041652 C1.9708514,14.5013684 3.05465753,15.5 4.35620819,15.5 L9.64379181,15.5 C10.9453425,15.5 12.0291486,14.5013684 12.1354412,13.2041652 L12.8486587,4.5 L1.15134128,4.5 Z" id="Rectangle"></path>
+                            <rect id="Rectangle" x="0.5" y="2.5" width="13" height="2"></rect>
+                            <path d="M5.36956522,2.5 L8.63043478,2.5 L8.63043478,1 C8.63043478,0.723857625 8.40657716,0.5 8.13043478,0.5 L5.86956522,0.5 C5.59342284,0.5 5.36956522,0.723857625 5.36956522,1 L5.36956522,2.5 Z" id="Rectangle-Copy-34"></path>
+                            <line x1="7" y1="5" x2="7" y2="15" id="Path-13"></line>
+                            <line x1="5" y1="4.4276123" x2="4" y2="15.5185547" id="Path-13-Copy-2" transform="translate(4.500000, 9.973083) scale(-1, 1) translate(-4.500000, -9.973083) "></line>
+                            <line x1="10" y1="4.4276123" x2="9" y2="15.5185547" id="Path-13-Copy-3"></line>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

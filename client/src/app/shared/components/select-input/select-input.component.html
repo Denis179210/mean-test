@@ -1,0 +1,14 @@
+<div class="select-input" #selectInput>
+  <div class="title">{{title}}</div>
+   <div class="input"
+    [ngClass]="{'input__selected': selectedOption}"
+    (click)="openOptions($event)"
+   >
+     <span class="placeholder" *ngIf="!selectedOption; else selectedOptionRef">{{placeholder}}</span>
+     <ng-template #selectedOptionRef></ng-template>
+     <span class="selected-option">{{selectedOption}}</span>
+     <div class="select-input_icon">
+       <img [src]="'./assets/icons/angle-down-light-blue.svg'" alt="angle-down-light-blue.svg">
+     </div>
+   </div>
+</div>
